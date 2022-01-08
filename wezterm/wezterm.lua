@@ -60,6 +60,11 @@ return {
 		},
 	},
 
+	native_macos_fullscreen_mode = true,
+
+	initial_cols = 150,
+	initial_rows = 50,
+
 	keys = {
 		-- This will create a new split and run your default program inside it
 		{
@@ -87,6 +92,10 @@ return {
 		{ key = "F", mods = "CMD|SHIFT", action = wezterm.action({ Search = { CaseInSensitiveString = "hash" } }) },
 
 		{ key = "T", mods = "CMD|SHIFT", action = "ShowTabNavigator" },
+
+		{ key = "L", mods = "CMD|SHIFT", action = "ShowLauncher" },
+
+		{ key = "Z", mods = "CMD|SHIFT", action = "ToggleFullScreen" },
 
 		{ key = "N", mods = "CMD|SHIFT", action = "SpawnWindow" },
 
