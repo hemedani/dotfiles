@@ -183,8 +183,8 @@ return {
 		{ key = "k", mods = "CMD|CTRL", action = wezterm.action({ ActivatePaneDirection = "Up" }) },
 		{ key = "j", mods = "CMD|CTRL", action = wezterm.action({ ActivatePaneDirection = "Down" }) },
 		-- Pane Cycles
-		{ key = "n", mods = "CMD|CTRL", action = wezterm.action({ ActivatePaneDirection = "Next" }) },
-		{ key = "p", mods = "CMD|CTRL", action = wezterm.action({ ActivatePaneDirection = "Prev" }) },
+		{ key = "[", mods = "CMD", action = wezterm.action({ ActivatePaneDirection = "Next" }) },
+		{ key = "]", mods = "CMD", action = wezterm.action({ ActivatePaneDirection = "Prev" }) },
 		-- Pane Resize
 		{ key = "H", mods = "CMD|SHIFT", action = wezterm.action({ AdjustPaneSize = { "Left", 2 } }) },
 		{ key = "J", mods = "CMD|SHIFT", action = wezterm.action({ AdjustPaneSize = { "Down", 2 } }) },
@@ -202,7 +202,7 @@ return {
 
 		{ key = "L", mods = "CMD|SHIFT", action = "ShowLauncher" },
 
-		{ key = "Z", mods = "CMD|SHIFT", action = "ToggleFullScreen" },
+		{ key = "f", mods = "CMD|CTRL", action = "ToggleFullScreen" },
 
 		{ key = "N", mods = "CMD|SHIFT", action = "SpawnWindow" },
 
