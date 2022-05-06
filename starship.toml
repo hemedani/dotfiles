@@ -1,11 +1,12 @@
 add_newline = true
 
 [character]
-# Prompt format
-vicmd_symbol = "[V](bold green) "
+vicmd_symbol = "[█](bold yellow) "
+success_symbol = "[█](bold #CC59B0) "
+error_symbol = "[█](bold red) "
 format = """
-[╔══════════════════════════════════════▌](fg:#CC59B0)
-[╚═══╬∞](fg:#CC59B0) """
+[╔══════════════════════════════════════$symbol](fg:#CC59B0)
+[╚═══╬▶▶](fg:#CC59B0) """
 
 [username]
 style_user = "fg:#CC99CC"
@@ -68,3 +69,7 @@ symbol = "[](bold yellow) "
 style = "bold fg:#5E5E5E"
 symbol = "[⬢](bold green) "
 
+[sudo]
+style = "bold green"
+symbol = "👩💻 "
+disabled = false
