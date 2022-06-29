@@ -29,7 +29,8 @@ style = "fg:#A7F3E4"
 format = "via [🐋 $context](blue bold)"
 
 [cmd_duration]
-disabled = true
+min_time = 50
+format = "⌛️[$duration](bold yellow)"
 
 [aws]
 format = "on [$symbol$profile]($style) "
