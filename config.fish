@@ -14,19 +14,19 @@ function fish_greeting
   
 end
 
-function la --wraps=ls --wraps=exa --description 'List contents of directory using exa tree'
+function la --wraps=ls --wraps=exa --description 'List contents of directory using exa grid'
   exa --grid --icons -a --long --header --accessed $argv
 end
 
-function ll --wraps=ls --wraps=exa --description 'List contents of directory using exa grid'
+function ll --wraps=ls --wraps=exa --description 'List contents of directory using exa tree'
   exa --tree --level=1 --long --header --accessed $argv
 end
 
-function lla --wraps=ls --wraps=exa --description 'List contents of directory using exa grid'
+function lla --wraps=ls --wraps=exa --description 'List contents of directory using exa tree'
   exa --tree --level=1 -a --long --header --accessed $argv
 end
 
-function lll --wraps=ls --wraps=exa --description 'List contents of directory using exa grid'
+function lll --wraps=ls --wraps=exa --description 'List contents of directory using exa tree'
   exa --tree --level=2 -a --long --header --accessed $argv
 end
 
