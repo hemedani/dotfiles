@@ -13,7 +13,6 @@ return {
 
   -- some custom styled
   allow_square_glyphs_to_overflow_width = "Always",
-  font_antialias = "Subpixel",
   color_scheme = "Gruvbox Dark Hard",
   color_schemes = {
     ["Gruvbox Dark Hard"] = {
