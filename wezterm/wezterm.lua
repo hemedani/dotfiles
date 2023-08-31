@@ -3,10 +3,16 @@ local wezterm = require("wezterm")
 return {
   font = wezterm.font_with_fallback({
     "Cascadia Code Light",
-    "Vazir Code Hack FD Regular",
+    "Vazir Code Hack",
     "MesloLGS NF",
   }),
   font_size = 15,
+
+  -- ﻦﺗ ﯽﺑﻮﺧ ﻡﻼ﻿ﺳ
+
+  -- Bidi support
+  bidi_enabled = true,
+  bidi_direction = "AutoLeftToRight",
 
   -- color_scheme = "Batman",
   line_height = 1.0,
