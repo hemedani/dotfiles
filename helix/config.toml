@@ -1,0 +1,99 @@
+theme = "tokyonight"
+
+[editor]
+line-number = "relative"
+bufferline = "always"
+scrolloff = 5
+mouse = true
+middle-click-paste = true
+scroll-lines = 3
+shell = ["sh", "-c"] # Unix
+#shell = ["cmd", "/C"] # Windows
+cursorline = true
+cursorcolumn = true
+auto-completion = true
+auto-format = true
+auto-save = true
+idle-timeout = 40
+completion-trigger-len = 2
+completion-replace = false
+auto-info = true
+true-color = true
+undercurl = true
+auto-pairs = true
+color-modes = true
+
+[editor.search]
+smart-case = false
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+follow-symlinks = true
+deduplicate-links = true
+parents = true
+ignore = true
+git-ignore = true
+git-global = true
+git-exclude = true
+#max-depth = 3
+
+[editor.lsp]
+enable = true
+display-messages = true
+auto-signature-help = true
+display-inlay-hints = true
+display-signature-help-docs = true
+snippets = true
+goto-reference-include-declaration = true
+
+[keys.insert]
+"A-x" = "normal_mode"     # Maps Alt-X to enter normal mode
+j = { k = "normal_mode" } # Maps `jk` to exit insert mode
+"tab"= ":bn"
+"S-tab"= ":bp"
+
+[keys.normal]
+"tab"= ":bn"
+"S-tab"= ":bp"
+g = { c = "toggle_comments" } 
+"space" = { c = ":buffer-close", n = ":n"}
+X = "extend_line_above"
+
+[keys.select]
+y = ":clipboard-yank"
+p = ":clipboard-paste-replace"
+X = "extend_line_above"
+"tab"= ":bn"
+"S-tab"= ":bp"
+
+[editor.statusline]
+left = ["mode", "spinner"]
+center = ["file-name"]
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.indent-guides]
+render = true
+character = "▏"
+skip-levels = 1
+
+[editor.gutters]
+layout = ["diagnostics", "spacer", "line-numbers", "spacer", "diff"]
+
+[editor.gutters.line-numbers]
+min-width = 3
+
+[editor.soft-wrap]
+enable = true
+max-wrap = 20
+max-indent-retain = 80
+wrap-indicator = "↪"
+wrap-at-text-width = false
