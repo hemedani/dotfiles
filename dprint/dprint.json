@@ -13,6 +13,9 @@
     "indentWidth": 2,
     "useTabs": false
   },
+  "markdown": {
+    "lineWidth":120,
+  },
   "includes": ["**/*.{ts,tsx,js,jsx,json,mjs,md,toml,dockerfile}"],
   "excludes": ["**/node_modules", "**/*-lock.json"],
   "plugins": [
